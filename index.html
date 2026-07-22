@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Primary Meta Tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Chief Kaliber | BADCOPSPH Alliance</title>
+  <meta
+    name="description"
+    content="The official in-game profile of Police Chief Kaliber — a member of the BADCOPSPH alliance, committed to maintaining order, protecting the community, and pursuing peace."
+  >
+  <meta
+    name="keywords"
+    content="Police Chief Kaliber, Kaliber, BADCOPSPH, Police Chief game, gaming profile, police character"
+  >
+  <meta name="author" content="Police Chief Kaliber">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Police Chief Kaliber | BADCOPSPH Alliance">
+  <meta
+    property="og:description"
+    content="Official in-game profile of Police Chief Kaliber."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://placehold.co/1200x630/3B82F6/FFFFFF?text=POLICE+CHIEF+KALIBER">
+  <meta property="og:url" content="https://example.com">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Police Chief Kaliber | BADCOPSPH Alliance">
+  <meta
+    name="twitter:description"
+    content="Official in-game profile of Police Chief Kaliber."
+  >
+  <meta name="twitter:image" content="https://placehold.co/1200x630/3B82F6/FFFFFF?text=POLICE+CHIEF+KALIBER">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#3B82F6">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6',
+            'primary-dark': '#2563EB',
+            'primary-light': '#EFF6FF',
+            ink: '#0F172A',
+            muted: '#64748B'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Playfair Display', 'serif']
+          },
+          boxShadow: {
+            soft: '0 10px 35px rgba(15, 23, 42, 0.08)',
+            card: '0 4px 20px rgba(15, 23, 42, 0.06)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --primary: #3B82F6;
+      --primary-dark: #2563EB;
+      --primary-light: #EFF6FF;
+      --white: #ffffff;
+      --ink: #0F172A;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --surface: #F8FAFC;
+      --radius: 1rem;
+      --transition: 180ms ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--ink);
+      background: var(--white);
+    }
+
+    ::selection {
+      color: white;
+      background: var(--primary);
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(59, 130, 246, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.055) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+
+    .timeline-line {
+      position: absolute;
+      left: 19px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--primary),
+        var(--primary),
+        transparent
+      );
+    }
+
+    .timeline-dot {
+      position: relative;
+      z-index: 2;
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border: 4px solid white;
+      border-radius: 999px;
+      background: var(--primary);
+      box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.2);
+    }
+
+    .nav-link {
+      position: relative;
+      transition:
+        color var(--transition),
+        background-color var(--transition);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 0.35rem;
+      height: 2px;
+      background: var(--primary);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform var(--transition);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary);
+    }
+
+    .card-hover {
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+    }
+
+    .card-hover:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-soft);
+      border-color: rgba(59, 130, 246, 0.35);
+    }
+
+    .btn {
+      transition:
+        transform var(--transition),
+        background-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .focus-ring:focus-visible,
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(59, 130, 246, 0.45);
+      outline-offset: 3px;
+    }
+
+    #backToTop {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition:
+        opacity var(--transition),
+        visibility var(--transition),
+        transform var(--transition);
+    }
+
+    #backToTop.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Skip Navigation -->
+  <a
+    href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-4 focus:left-4 focus:bg-white focus:px-4 focus:py-3 focus:rounded-lg focus:shadow-lg"
+  >
+    Skip to main content
+  </a>
+
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
+  <header
+    id="site-header"
+    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200"
+  >
+    <nav
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+      aria-label="Main navigation"
+    >
+      <div class="h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a
+          href="#home"
+          class="flex items-center gap-3 focus-ring rounded-lg"
+          aria-label="Police Chief Kaliber home"
+        >
+          <span
+            class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center shadow-sm"
+            aria-hidden="true"
+          >
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </span>
+
+          <span>
+            <span class="block text-sm font-extrabold tracking-tight text-ink">
+              CHIEF KALIBER
+            </span>
+            <span class="block text-[10px] uppercase tracking-[0.18em] text-muted">
+              Police Department
+            </span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center gap-1">
+          <a class="nav-link px-4 py-3 text-sm font-medium" href="#about">About</a>
+          <a class="nav-link px-4 py-3 text-sm font-medium" href="#team">Team</a>
+          <a class="nav-link px-4 py-3 text-sm font-medium" href="#divisions">Divisions</a>
+          <a class="nav-link px-4 py-3 text-sm font-medium" href="#orders">Orders</a>
+          <a class="nav-link px-4 py-3 text-sm font-medium" href="#statements">Statements</a>
+          <a class="nav-link px-4 py-3 text-sm font-medium" href="#alliance">Alliance</a>
+          <a class="nav-link px-4 py-3 text-sm font-medium" href="#testimonials">Testimonials</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          type="button"
+          class="lg:hidden p-3 rounded-lg hover:bg-slate-100 focus-ring"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobileMenu"
+        class="hidden lg:hidden border-t border-slate-200 py-3"
+      >
+        <div class="flex flex-col">
+          <a class="mobile-nav-link px-4 py-3 rounded-lg hover:bg-primary-light" href="#about">About</a>
+          <a class="mobile-nav-link px-4 py-3 rounded-lg hover:bg-primary-light" href="#team">Team</a>
+          <a class="mobile-nav-link px-4 py-3 rounded-lg hover:bg-primary-light" href="#divisions">Divisions</a>
+          <a class="mobile-nav-link px-4 py-3 rounded-lg hover:bg-primary-light" href="#orders">Chief Orders</a>
+          <a class="mobile-nav-link px-4 py-3 rounded-lg hover:bg-primary-light" href="#statements">Public Statements</a>
+          <a class="mobile-nav-link px-4 py-3 rounded-lg hover:bg-primary-light" href="#alliance">Alliance</a>
+          <a class="mobile-nav-link px-4 py-3 rounded-lg hover:bg-primary-light" href="#testimonials">Testimonials</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center pt-20 overflow-hidden hero-grid"
+    >
+      <div class="absolute inset-0 bg-gradient-to-br from-white via-white/95 to-primary-light/60"></div>
+
+      <div class="relative max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+          <!-- Hero Copy -->
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-primary-light border border-blue-100 text-primary text-xs font-bold uppercase tracking-wider mb-7">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              Active Police Chief
+            </div>
+
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[0.98]">
+              Police Chief
+              <span class="block text-primary">Kaliber</span>
+            </h1>
+
+            <p class="mt-7 text-xl sm:text-2xl font-medium text-slate-700 leading-relaxed max-w-2xl">
+              "I want peace but if peace isn't attainable,
+              I'll aim between the eyes."
+            </p>
+
+            <p class="mt-6 text-base leading-7 text-muted max-w-xl">
+              A dedicated in-game law enforcement leader known for discipline,
+              decisive action, and an unwavering commitment to maintaining order.
+              As a member of the BADCOPSPH alliance, Chief Kaliber works alongside
+              fellow officers and allies toward a safer and more organized community.
+            </p>
+
+            <div class="mt-9 flex flex-wrap gap-3">
+              <a
+                href="#about"
+                class="btn inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-lg font-semibold shadow-lg shadow-blue-500/20"
+              >
+                View Profile
+                <i data-lucide="arrow-down" class="w-4 h-4"></i>
+              </a>
+
+              <a
+                href="#alliance"
+                class="btn inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-ink px-6 py-3.5 rounded-lg font-semibold border border-slate-200"
+              >
+                BADCOPSPH Alliance
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="mt-12 grid grid-cols-3 max-w-lg border-t border-slate-200 pt-7">
+              <div>
+                <p class="text-2xl font-extrabold">01</p>
+                <p class="mt-1 text-xs text-muted uppercase tracking-wider">
+                  Chief
+                </p>
+              </div>
+
+              <div class="border-l border-slate-200 pl-5">
+                <p class="text-2xl font-extrabold">PH</p>
+                <p class="mt-1 text-xs text-muted uppercase tracking-wider">
+                  Alliance
+                </p>
+              </div>
+
+              <div class="border-l border-slate-200 pl-5">
+                <p class="text-2xl font-extrabold">24/7</p>
+                <p class="mt-1 text-xs text-muted uppercase tracking-wider">
+                  On Duty
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Portrait -->
+          <div class="relative">
+            <div class="absolute -inset-5 rounded-[2rem] bg-primary/10 rotate-3"></div>
+
+            <div class="relative bg-white rounded-[2rem] border border-slate-200 shadow-soft overflow-hidden">
+              <img
+                src="https://placehold.co/900x1100/DBEAFE/1E3A8A?text=POLICE+CHIEF%0AKALIBER"
+                alt="Placeholder portrait of Police Chief Kaliber"
+                class="w-full aspect-[4/5] object-cover"
+              >
+
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-7 pt-24 text-white">
+                <div class="flex items-end justify-between gap-4">
+                  <div>
+                    <p class="text-xs uppercase tracking-[0.2em] text-blue-200 font-semibold">
+                      Command Profile
+                    </p>
+                    <h2 class="mt-2 text-2xl font-bold">
+                      Chief Kaliber
+                    </h2>
+                  </div>
+
+                  <div class="w-12 h-12 rounded-full bg-white/10 backdrop-blur flex items-center justify-center border border-white/20">
+                    <i data-lucide="badge-check" class="w-6 h-6"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Status Badge -->
+            <div class="absolute -bottom-5 -left-3 sm:-left-7 bg-white border border-slate-200 shadow-lg rounded-xl px-4 py-3 flex items-center gap-3">
+              <span class="w-3 h-3 bg-emerald-500 rounded-full ring-4 ring-emerald-100"></span>
+              <div>
+                <p class="text-xs font-bold text-ink">STATUS</p>
+                <p class="text-xs text-muted">Serving & Active</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         ABOUT / PROFILE
+    ========================== -->
+    <section id="about" class="py-24 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="max-w-3xl mb-16">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+            01 — Profile
+          </p>
+
+          <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">
+            A profile built around duty.
+          </h2>
+
+          <p class="mt-6 text-lg text-muted leading-8">
+            Chief Kaliber is an in-game character played within the Police Chief
+            mobile game. This profile serves as a central record of her identity,
+            leadership philosophy, command structure, public statements, and
+            affiliation with the BADCOPSPH alliance.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+
+          <article class="lg:col-span-2 p-8 sm:p-10 rounded-2xl border border-slate-200 bg-slate-50">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="w-11 h-11 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+                <i data-lucide="user-round" class="w-5 h-5"></i>
+              </span>
+
+              <div>
+                <h3 class="font-bold text-lg">Chief's Profile</h3>
+                <p class="text-sm text-muted">Command identity and philosophy</p>
+              </div>
+            </div>
+
+            <div class="prose prose-slate max-w-none">
+              <p class="text-slate-600 leading-8">
+                Kaliber approaches leadership with a clear understanding that
+                authority carries responsibility. Her role is not simply to
+                command, but to establish direction when circumstances become
+                uncertain and to remain accountable for the decisions made under
+                her command.
+              </p>
+
+              <p class="mt-5 text-slate-600 leading-8">
+                Her philosophy prioritizes peace, stability, and cooperation.
+                However, she recognizes that maintaining order sometimes requires
+                difficult decisions. This balance between restraint and decisive
+                action defines her approach to law enforcement and leadership.
+              </p>
+            </div>
+          </article>
+
+          <aside class="p-8 sm:p-10 rounded-2xl bg-primary text-white shadow-lg shadow-blue-500/20">
+            <i data-lucide="quote" class="w-10 h-10 opacity-50"></i>
+
+            <blockquote class="mt-6 text-2xl font-semibold leading-relaxed">
+              "I want peace but if peace isn't attainable, I'll aim between the eyes."
+            </blockquote>
+
+            <div class="mt-8 pt-6 border-t border-white/20">
+              <p class="text-sm font-semibold">— Chief Kaliber</p>
+              <p class="mt-1 text-sm text-blue-100">
+                Command Philosophy
+              </p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         TIMELINE / STORY
+    ========================== -->
+    <section class="py-24 sm:py-28 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+            Career Timeline
+          </p>
+
+          <h2 class="mt-4 text-4xl font-extrabold tracking-tight">
+            The road to command.
+          </h2>
+
+          <p class="mt-5 text-muted leading-7">
+            A concise overview of Chief Kaliber's journey and the principles
+            that shaped her command.
+          </p>
+        </div>
+
+        <div class="relative">
+
+          <div class="timeline-line hidden sm:block"></div>
+
+          <div class="space-y-12">
+
+            <article class="relative flex gap-5 sm:gap-8">
+              <div class="timeline-dot flex items-center justify-center text-white">
+                <i data-lucide="user-plus" class="w-4 h-4"></i>
+              </div>
+
+              <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex-1 shadow-card">
+                <p class="text-xs uppercase tracking-widest text-primary font-bold">
+                  Beginning
+                </p>
+
+                <h3 class="mt-2 text-xl font-bold">
+                  Entering the Force
+                </h3>
+
+                <p class="mt-4 text-muted leading-7">
+                  Kaliber's journey began with a commitment to serve within the
+                  game's law enforcement community, establishing a reputation
+                  built on reliability, discipline, and a willingness to take
+                  responsibility.
+                </p>
+              </div>
+            </article>
+
+            <article class="relative flex gap-5 sm:gap-8">
+              <div class="timeline-dot flex items-center justify-center text-white">
+                <i data-lucide="shield" class="w-4 h-4"></i>
+              </div>
+
+              <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex-1 shadow-card">
+                <p class="text-xs uppercase tracking-widest text-primary font-bold">
+                  Leadership
+                </p>
+
+                <h3 class="mt-2 text-xl font-bold">
+                  Rising Through Command
+                </h3>
+
+                <p class="mt-4 text-muted leading-7">
+                  Through continued service and leadership, Kaliber assumed a
+                  greater role in coordinating personnel, maintaining standards,
+                  and setting the tone for those operating under her command.
+                </p>
+              </div>
+            </article>
+
+            <article class="relative flex gap-5 sm:gap-8">
+              <div class="timeline-dot flex items-center justify-center text-white">
+                <i data-lucide="badge-check" class="w-4 h-4"></i>
+              </div>
+
+              <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex-1 shadow-card">
+                <p class="text-xs uppercase tracking-widest text-primary font-bold">
+                  Present
+                </p>
+
+                <h3 class="mt-2 text-xl font-bold">
+                  Serving as Police Chief
+                </h3>
+
+                <p class="mt-4 text-muted leading-7">
+                  Today, Chief Kaliber represents a leadership style centered on
+                  order, accountability, and the pursuit of peace while maintaining
+                  the readiness to respond decisively when necessary.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         TEAM
+    ========================== -->
+    <section id="team" class="py-24 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+              02 — Team
+            </p>
+
+            <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">
+              The people behind the badge.
+            </h2>
+          </div>
+
+          <p class="max-w-xl text-muted leading-7">
+            Leadership is never a solo operation. The department relies on
+            officers, commanders, and trusted personnel who share the responsibility
+            of keeping operations organized and effective.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <article class="card-hover bg-white border border-slate-200 rounded-2xl overflow-hidden">
+            <img
+              src="https://placehold.co/600x600/DBEAFE/1E3A8A?text=CHIEF"
+              alt="Placeholder portrait for Police Chief Kaliber"
+              class="w-full aspect-square object-cover"
+            >
+
+            <div class="p-6">
+              <p class="text-xs text-primary font-bold uppercase tracking-widest">
+                Chief of Police
+              </p>
+              <h3 class="mt-2 text-xl font-bold">Kaliber</h3>
+              <p class="mt-3 text-sm text-muted leading-6">
+                Head of command and primary authority responsible for departmental
+                direction and strategic decisions.
+              </p>
+            </div>
+          </article>
+
+          <article class="card-hover bg-white border border-slate-200 rounded-2xl overflow-hidden">
+            <img
+              src="https://placehold.co/600x600/EFF6FF/1E40AF?text=COMMAND"
+              alt="Placeholder image representing command staff"
+              class="w-full aspect-square object-cover"
+            >
+
+            <div class="p-6">
+              <p class="text-xs text-primary font-bold uppercase tracking-widest">
+                Command Staff
+              </p>
+              <h3 class="mt-2 text-xl font-bold">Senior Officers</h3>
+              <p class="mt-3 text-sm text-muted leading-6">
+                Trusted personnel who assist with coordination, operational
+                planning, and departmental oversight.
+              </p>
+            </div>
+          </article>
+
+          <article class="card-hover bg-white border border-slate-200 rounded-2xl overflow-hidden">
+            <img
+              src="https://placehold.co/600x600/DBEAFE/1E3A8A?text=OPERATIONS"
+              alt="Placeholder image representing police operations"
+              class="w-full aspect-square object-cover"
+            >
+
+            <div class="p-6">
+              <p class="text-xs text-primary font-bold uppercase tracking-widest">
+                Operations
+              </p>
+              <h3 class="mt-2 text-xl font-bold">Field Officers</h3>
+              <p class="mt-3 text-sm text-muted leading-6">
+                Personnel responsible for carrying out operational directives and
+                maintaining a visible presence in the field.
+              </p>
+            </div>
+          </article>
+
+          <article class="card-hover bg-white border border-slate-200 rounded-2xl overflow-hidden">
+            <img
+              src="https://placehold.co/600x600/EFF6FF/1E40AF?text=ALLIANCE"
+              alt="Placeholder image representing alliance partners"
+              class="w-full aspect-square object-cover"
+            >
+
+            <div class="p-6">
+              <p class="text-xs text-primary font-bold uppercase tracking-widest">
+                Alliance
+              </p>
+              <h3 class="mt-2 text-xl font-bold">BADCOPSPH</h3>
+              <p class="mt-3 text-sm text-muted leading-6">
+                A wider network of allied members committed to cooperation,
+                coordination, and shared objectives.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         DIVISIONS
+    ========================== -->
+    <section id="divisions" class="py-24 sm:py-28 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="max-w-3xl mb-14">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+            03 — Divisions
+          </p>
+
+          <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">
+            Organized for every situation.
+          </h2>
+
+          <p class="mt-5 text-muted leading-7">
+            The department's divisions represent the key areas of responsibility
+            necessary for maintaining order, responding to incidents, and supporting
+            the wider community.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <article class="card-hover p-7 bg-white border border-slate-200 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+              <i data-lucide="radio" class="w-6 h-6"></i>
+            </div>
+
+            <h3 class="mt-6 text-xl font-bold">Command & Coordination</h3>
+
+            <p class="mt-3 text-muted leading-7">
+              Oversees department-wide decisions, communicates priorities, and
+              coordinates personnel during significant operations.
+            </p>
+          </article>
+
+          <article class="card-hover p-7 bg-white border border-slate-200 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+              <i data-lucide="siren" class="w-6 h-6"></i>
+            </div>
+
+            <h3 class="mt-6 text-xl font-bold">Patrol Operations</h3>
+
+            <p class="mt-3 text-muted leading-7">
+              Focuses on maintaining a visible presence, responding to incidents,
+              and ensuring that personnel remain ready to act when needed.
+            </p>
+          </article>
+
+          <article class="card-hover p-7 bg-white border border-slate-200 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+              <i data-lucide="search" class="w-6 h-6"></i>
+            </div>
+
+            <h3 class="mt-6 text-xl font-bold">Investigations</h3>
+
+            <p class="mt-3 text-muted leading-7">
+              Handles the review of incidents, collection of information, and
+              analysis required to understand complex situations.
+            </p>
+          </article>
+
+          <article class="card-hover p-7 bg-white border border-slate-200 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+
+            <h3 class="mt-6 text-xl font-bold">Community Relations</h3>
+
+            <p class="mt-3 text-muted leading-7">
+              Builds trust through communication, transparency, and constructive
+              relationships with the people the department serves.
+            </p>
+          </article>
+
+          <article class="card-hover p-7 bg-white border border-slate-200 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+              <i data-lucide="shield-plus" class="w-6 h-6"></i>
+            </div>
+
+            <h3 class="mt-6 text-xl font-bold">Special Response</h3>
+
+            <p class="mt-3 text-muted leading-7">
+              Maintains readiness for high-risk or rapidly developing situations
+              requiring immediate coordination and decisive leadership.
+            </p>
+          </article>
+
+          <article class="card-hover p-7 bg-white border border-slate-200 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-primary-light text-primary flex items-center justify-center">
+              <i data-lucide="handshake" class="w-6 h-6"></i>
+            </div>
+
+            <h3 class="mt-6 text-xl font-bold">Alliance Liaison</h3>
+
+            <p class="mt-3 text-muted leading-7">
+              Maintains communication and cooperation with allied members and
+              organizations, including the BADCOPSPH alliance.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         CHIEF ORDERS
+    ========================== -->
+    <section id="orders" class="py-24 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-5 gap-12 lg:gap-20">
+
+          <div class="lg:col-span-2">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+              04 — Chief Orders
+            </p>
+
+            <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">
+              The standard is clear.
+            </h2>
+
+            <p class="mt-6 text-muted leading-8">
+              These standing principles define the expectations placed upon
+              personnel serving under Chief Kaliber's command.
+            </p>
+          </div>
+
+          <div class="lg:col-span-3 space-y-4">
+
+            <article class="flex gap-5 p-6 rounded-2xl border border-slate-200 bg-slate-50">
+              <span class="text-primary font-extrabold text-lg">01</span>
+              <div>
+                <h3 class="font-bold text-lg">Maintain discipline.</h3>
+                <p class="mt-2 text-muted leading-7">
+                  Every officer is expected to understand their responsibility,
+                  follow established procedures, and act with professionalism.
+                </p>
+              </div>
+            </article>
+
+            <article class="flex gap-5 p-6 rounded-2xl border border-slate-200 bg-slate-50">
+              <span class="text-primary font-extrabold text-lg">02</span>
+              <div>
+                <h3 class="font-bold text-lg">Protect the community.</h3>
+                <p class="mt-2 text-muted leading-7">
+                  Service comes first. Decisions should prioritize the safety,
+                  stability, and long-term well-being of the community.
+                </p>
+              </div>
+            </article>
+
+            <article class="flex gap-5 p-6 rounded-2xl border border-slate-200 bg-slate-50">
+              <span class="text-primary font-extrabold text-lg">03</span>
+              <div>
+                <h3 class="font-bold text-lg">Seek peace first.</h3>
+                <p class="mt-2 text-muted leading-7">
+                  De-escalation and cooperation remain the preferred solutions
+                  whenever circumstances allow.
+                </p>
+              </div>
+            </article>
+
+            <article class="flex gap-5 p-6 rounded-2xl border border-slate-200 bg-slate-50">
+              <span class="text-primary font-extrabold text-lg">04</span>
+              <div>
+                <h3 class="font-bold text-lg">Act decisively when necessary.</h3>
+                <p class="mt-2 text-muted leading-7">
+                  When peace is no longer attainable, officers must be prepared
+                  to respond with clarity, discipline, and resolve.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         PUBLIC STATEMENTS
+    ========================== -->
+    <section id="statements" class="py-24 sm:py-28 bg-primary text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="max-w-3xl">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-blue-200">
+            05 — Public Statements
+          </p>
+
+          <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">
+            Words from the Chief.
+          </h2>
+
+          <p class="mt-5 text-blue-100 leading-7">
+            Selected statements reflecting Chief Kaliber's approach to leadership,
+            service, and the responsibility of holding a position of authority.
+          </p>
+        </div>
+
+        <div class="mt-14 grid lg:grid-cols-3 gap-6">
+
+          <article class="p-7 rounded-2xl bg-white/10 border border-white/15 backdrop-blur">
+            <i data-lucide="quote" class="w-8 h-8 text-blue-200"></i>
+
+            <p class="mt-7 text-xl font-semibold leading-8">
+              "Leadership is not about being the loudest voice in the room.
+              It is about being the person others can rely on when the room
+              goes quiet."
+            </p>
+
+            <p class="mt-7 text-sm text-blue-200 font-medium">
+              — On Leadership
+            </p>
+          </article>
+
+          <article class="p-7 rounded-2xl bg-white/10 border border-white/15 backdrop-blur">
+            <i data-lucide="quote" class="w-8 h-8 text-blue-200"></i>
+
+            <p class="mt-7 text-xl font-semibold leading-8">
+              "Peace should always be the objective. But wanting peace does not
+              mean being unprepared for those who would threaten it."
+            </p>
+
+            <p class="mt-7 text-sm text-blue-200 font-medium">
+              — On Peace & Readiness
+            </p>
+          </article>
+
+          <article class="p-7 rounded-2xl bg-white/10 border border-white/15 backdrop-blur">
+            <i data-lucide="quote" class="w-8 h-8 text-blue-200"></i>
+
+            <p class="mt-7 text-xl font-semibold leading-8">
+              "Every badge represents a promise. A promise to serve, to protect,
+              and to remain accountable for every decision we make."
+            </p>
+
+            <p class="mt-7 text-sm text-blue-200 font-medium">
+              — On Duty
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         ALLIANCE
+    ========================== -->
+    <section id="alliance" class="py-24 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+              06 — Alliance
+            </p>
+
+            <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">
+              Stronger through alliance.
+            </h2>
+
+            <p class="mt-6 text-lg text-muted leading-8">
+              Chief Kaliber is a member of the
+              <strong class="text-ink">BADCOPSPH alliance</strong>,
+              a community built around cooperation, coordination, and shared
+              objectives within the game's wider environment.
+            </p>
+
+            <p class="mt-5 text-muted leading-7">
+              The alliance provides an opportunity to build relationships,
+              exchange information, coordinate activities, and support fellow
+              members when circumstances demand a unified response.
+            </p>
+
+            <div class="mt-8">
+              <a
+                href="#contact"
+                class="btn inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-lg font-semibold"
+              >
+                Alliance Profile
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -inset-4 rounded-3xl bg-primary-light"></div>
+
+            <div class="relative bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-soft">
+              <div class="flex items-center justify-between gap-5">
+                <div class="w-20 h-20 rounded-2xl bg-primary text-white flex items-center justify-center shadow-lg shadow-blue-500/20">
+                  <i data-lucide="shield" class="w-10 h-10"></i>
+                </div>
+
+                <span class="px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold">
+                  ACTIVE MEMBER
+                </span>
+              </div>
+
+              <h3 class="mt-8 text-3xl font-extrabold">
+                BADCOPSPH
+              </h3>
+
+              <p class="mt-2 text-muted">
+                Alliance Membership
+              </p>
+
+              <div class="mt-8 pt-7 border-t border-slate-200 grid grid-cols-2 gap-6">
+                <div>
+                  <p class="text-xs text-muted uppercase tracking-wider">
+                    Member
+                  </p>
+                  <p class="mt-2 font-bold">Chief Kaliber</p>
+                </div>
+
+                <div>
+                  <p class="text-xs text-muted uppercase tracking-wider">
+                    Status
+                  </p>
+                  <p class="mt-2 font-bold text-emerald-600">
+                    Active
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-7 p-5 rounded-xl bg-slate-50">
+                <p class="text-sm text-slate-600 leading-6">
+                  "United by purpose, strengthened by cooperation, and prepared
+                  to stand together when it matters."
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         TESTIMONIALS
+    ========================== -->
+    <section id="testimonials" class="py-24 sm:py-28 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+            07 — Testimonials
+          </p>
+
+          <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">
+            What others say.
+          </h2>
+
+          <p class="mt-5 text-muted leading-7">
+            Placeholder testimonials that can be replaced with statements from
+            fellow players, alliance members, and colleagues.
+          </p>
+        </div>
+
+        <div class="mt-14 grid md:grid-cols-3 gap-6">
+
+          <article class="p-7 bg-white border border-slate-200 rounded-2xl shadow-card">
+            <div class="flex gap-1 text-primary" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+
+            <blockquote class="mt-6 text-slate-700 leading-7">
+              "Chief Kaliber brings a clear sense of direction to every situation.
+              You always know where the department stands and what is expected."
+            </blockquote>
+
+            <div class="mt-7 pt-6 border-t border-slate-200">
+              <p class="font-bold">Senior Officer</p>
+              <p class="mt-1 text-sm text-muted">Department Personnel</p>
+            </div>
+          </article>
+
+          <article class="p-7 bg-white border border-slate-200 rounded-2xl shadow-card">
+            <div class="flex gap-1 text-primary" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+
+            <blockquote class="mt-6 text-slate-700 leading-7">
+              "What stands out is the balance between diplomacy and decisiveness.
+              Kaliber understands when to negotiate and when to take command."
+            </blockquote>
+
+            <div class="mt-7 pt-6 border-t border-slate-200">
+              <p class="font-bold">Alliance Member</p>
+              <p class="mt-1 text-sm text-muted">BADCOPSPH</p>
+            </div>
+          </article>
+
+          <article class="p-7 bg-white border border-slate-200 rounded-2xl shadow-card">
+            <div class="flex gap-1 text-primary" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+
+            <blockquote class="mt-6 text-slate-700 leading-7">
+              "A dependable leader who takes the responsibility of the badge
+              seriously. Her priorities are always clear: order, service, and peace."
+            </blockquote>
+
+            <div class="mt-7 pt-6 border-t border-slate-200">
+              <p class="font-bold">Community Member</p>
+              <p class="mt-1 text-sm text-muted">Public Feedback</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         CONTACT / CLOSING
+    ========================== -->
+    <section id="contact" class="py-24 sm:py-28 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-primary-light text-primary flex items-center justify-center">
+          <i data-lucide="shield-check" class="w-8 h-8"></i>
+        </div>
+
+        <h2 class="mt-7 text-4xl sm:text-5xl font-extrabold tracking-tight">
+          Service. Order. Peace.
+        </h2>
+
+        <p class="mt-6 text-lg text-muted leading-8 max-w-2xl mx-auto">
+          This profile represents Police Chief Kaliber's in-game identity,
+          leadership philosophy, and affiliation with the BADCOPSPH alliance.
+          The mission remains simple: protect the community, uphold order,
+          and pursue peace whenever possible.
+        </p>
+
+        <div class="mt-9">
+          <a
+            href="#home"
+            class="btn inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-7 py-3.5 rounded-lg font-semibold shadow-lg shadow-blue-500/20"
+          >
+            Return to Profile
+            <i data-lucide="arrow-up" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+
+        <p class="text-sm text-muted">
+          © <span id="currentYear"></span> Police Chief Kaliber. All rights reserved.
+        </p>
+
+        <div class="flex items-center gap-5">
+          <a
+            href="#"
+            class="text-muted hover:text-primary transition-colors focus-ring rounded"
+            aria-label="Facebook"
+          >
+            <i data-lucide="facebook" class="w-5 h-5"></i>
+          </a>
+
+          <a
+            href="#"
+            class="text-muted hover:text-primary transition-colors focus-ring rounded"
+            aria-label="Instagram"
+          >
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+          </a>
+
+          <a
+            href="#"
+            class="text-muted hover:text-primary transition-colors focus-ring rounded"
+            aria-label="Discord"
+          >
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+          </a>
+
+          <a
+            href="#"
+            class="text-muted hover:text-primary transition-colors focus-ring rounded"
+            aria-label="X / Twitter"
+          >
+            <i data-lucide="twitter" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =========================
+       BACK TO TOP
+  ========================== -->
+  <button
+    id="backToTop"
+    type="button"
+    class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-primary hover:bg-primary-dark text-white shadow-lg shadow-blue-500/30 flex items-center justify-center focus-ring"
+    aria-label="Back to top"
+    title="Back to top"
+  >
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Current year
+      document.getElementById('currentYear').textContent =
+        new Date().getFullYear();
+
+      // Mobile navigation
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      menuButton.addEventListener('click', () => {
+        const isOpen =
+          menuButton.getAttribute('aria-expanded') === 'true';
+
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+        mobileMenu.classList.toggle('hidden');
+
+        menuButton.innerHTML = isOpen
+          ? '<i data-lucide="menu" class="w-6 h-6"></i>'
+          : '<i data-lucide="x" class="w-6 h-6"></i>';
+
+        lucide.createIcons();
+      });
+
+      // Close mobile menu after clicking a link
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuButton.setAttribute('aria-expanded', 'false');
+
+          menuButton.innerHTML =
+            '<i data-lucide="menu" class="w-6 h-6"></i>';
+
+          lucide.createIcons();
+        });
+      });
+
+      // Back to top button
+      const backToTop = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      }, { passive: true });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // Active navigation state
+      const sections = document.querySelectorAll('main section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      const updateActiveNav = () => {
+        let currentSection = '';
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 140;
+
+          if (window.scrollY >= sectionTop) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          const href = link.getAttribute('href');
+
+          if (href === `#${currentSection}`) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      };
+
+      window.addEventListener('scroll', updateActiveNav, {
+        passive: true
+      });
+
+      updateActiveNav();
+
+    });
+  </script>
+
+</body>
+</html>
